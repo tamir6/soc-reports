@@ -71,6 +71,7 @@ https://github.com/tamir6/soc-reports/blob/main/project1/log%20files/web_access.
 ## 📤 Stage 3 --- Successful Malicious File Upload
 
 ### 📄 Evidence (web_error.log)
+https://github.com/tamir6/soc-reports/blob/main/project1/log%20files/web_error.log
 
     [Sun Nov 23 14:02:01.998877 2025] [php7:info] [pid 1246] [client 10.0.0.50:51522] File upload successful: /var/www/html/uploads/reverse_proxy.php (size: 1841 bytes), referer: http://10.0.0.20/upload.php
 
