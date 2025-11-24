@@ -2,7 +2,7 @@
 
 **Date:** 23/11/2025\
 **Format:** GitHub-Friendly README (Markdown)
-<img width="193" height="36" alt="image" src="https://github.com/user-attachments/assets/03c14630-ba6b-4672-ac90-796c06801ca2" />
+
 
 ------------------------------------------------------------------------
 
