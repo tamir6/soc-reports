@@ -38,6 +38,7 @@ nmap -sV -p 80,443 10.0.0.20
 
 ### 📄 Evidence (Web access logs)
 https://github.com/tamir6/soc-reports/blob/main/project1/log%20files/web_access.log
+
     10.0.0.50 - - [23/Nov/2025:14:01:09 +0200] "GET / HTTP/1.1" 200 512 "-" "Mozilla/5.0 (compatible; Nmap Scripting Engine; http-enum)"
     10.0.0.50 - - [23/Nov/2025:14:01:09 +0200] "GET /robots.txt HTTP/1.1" 404 298 "-" "Mozilla/5.0 (compatible; Nmap Scripting Engine; http-enum)"
     10.0.0.50 - - [23/Nov/2025:14:01:12 +0200] "GET /admin/ HTTP/1.1" 403 420 "-" "Mozilla/5.0 (compatible; Nmap Scripting Engine; http-enum)"
