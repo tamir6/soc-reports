@@ -3,7 +3,7 @@
 **Date:** 23/11/2025\
 **Format:** GitHub-Friendly README (Markdown)
 https://github.com/tamir6/soc-reports/blob/main/log_files/firewall_nc.log 
-
+https://github.com/tamir6/soc-reports/blob/main/log_files/terminal_monitor.log
 ------------------------------------------------------------------------
 
 ## 📌 Overview
