@@ -1,7 +1,7 @@
 # 🛡️ Web Attack Analysis Report
 
 **Date:** 23/11/2025\
-**Format:** GitHub-Friendly README (Markdown)
+
 
 ------------------------------------------------------------------------
 
@@ -137,6 +137,6 @@ established.
 -   Enable detailed logging and real-time monitoring.
 
 ------------------------------------------------------------------------
-All documentation is in the log_files folder
+
 
 **End of Report**
