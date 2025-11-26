@@ -12,9 +12,9 @@ This report presents the analysis of a simulated **RDP brute force attack**, inv
 ## 🧩 Step 1 — Identifying Suspicious IP Addresses
 After filtering relevant RDP (port **3389**) traffic in Splunk, three IP addresses appeared suspicious:
 
-<img src="https://github.com/user-attachments/assets/dcbf4da8-27ec-4c3d-ba4a-291fdcb7b551" width="600"/>
+<img src="https://github.com/user-attachments/assets/dcbf4da8-27ec-4c3d-ba4a-291fdcb7b551" width="300"/>
 <br/>
-<img src="https://github.com/user-attachments/assets/955c6c8b-006d-4099-ad8b-8fa1464ed7f8" width="600"/>
+<img src="https://github.com/user-attachments/assets/955c6c8b-006d-4099-ad8b-8fa1464ed7f8" width="300"/>
 
 ```
 203.0.113.50
@@ -36,9 +36,9 @@ Based on event volume, **203.0.113.50** showed the largest spike and was identif
 - This IP performed **two login attempts** targeting `it-admin`.  
 - Both attempts were legitimate, without repetition, brute-force behavior, or anomalies.
 
-<img src="https://github.com/user-attachments/assets/61eda07f-d940-4b64-be12-33ccbfa149d2" width="600"/>
+<img src="https://github.com/user-attachments/assets/61eda07f-d940-4b64-be12-33ccbfa149d2" width="300"/>
 <br/>
-<img src="https://github.com/user-attachments/assets/630732a8-a1a3-4545-94eb-cae4a9149d4f" width="600"/>
+<img src="https://github.com/user-attachments/assets/630732a8-a1a3-4545-94eb-cae4a9149d4f" width="300"/>
 
 ### ✔ Conclusion  
 Both **10.0.0.50** and **10.0.0.70** exhibited normal authentication behavior, with no rapid repeated login attempts.  
@@ -48,7 +48,7 @@ Therefore, **they were excluded as suspects**, leaving **203.0.113.50** as the o
 
 ## 🔍 Deep-Dive Into the Suspicious IP (203.0.113.50)
 
-<img src="https://github.com/user-attachments/assets/854d3b45-cc7d-410a-a682-d16ecaa82b7c" width="650"/>
+<img src="https://github.com/user-attachments/assets/854d3b45-cc7d-410a-a682-d16ecaa82b7c" width="300"/>
 
 Further filtering showed:
 
@@ -66,10 +66,10 @@ Further filtering showed:
 ## 🚨 IPS Alerts & Behavior
 
 ### Alert: `rdp_bruteforce_threshold`
-<img src="https://github.com/user-attachments/assets/3ae207a3-da9b-4f5d-8234-b4c612d10c22" width="500"/>
+<img src="https://github.com/user-attachments/assets/3ae207a3-da9b-4f5d-8234-b4c612d10c22" width="300"/>
 
 ### Alert: `rdp_bruteforce_blocked_ip`
-<img src="https://github.com/user-attachments/assets/b3467932-bd5f-4b9c-9309-6ed4cc427af5" width="500"/>
+<img src="https://github.com/user-attachments/assets/b3467932-bd5f-4b9c-9309-6ed4cc427af5" width="300"/>
 
 **Conclusion:**  
 The attacker IP (`203.0.113.50`) was **automatically blacklisted** by the IPS after exceeding the brute-force threshold.
@@ -87,7 +87,7 @@ No evidence of lateral movement or non-RDP probing was found.
 - Multiple rapid login attempts (**10 attempts / 30 seconds**)  
 - Attempts originating from a single IP  
 
-<img src="https://github.com/user-attachments/assets/1f5e913b-9781-4509-8119-1f147221d2b4" width="700"/>
+<img src="https://github.com/user-attachments/assets/1f5e913b-9781-4509-8119-1f147221d2b4" width="300"/>
 
 ---
 
