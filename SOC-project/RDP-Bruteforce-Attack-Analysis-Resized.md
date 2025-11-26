@@ -61,7 +61,8 @@ Further filtering showed:
 | **First login attempt** | 25/11/2025 10:05:01 |
 | **Last recorded attempt** | 25/11/2025 10:05:33 |
 
----
+<img width="1129" height="730" alt="image" src="https://github.com/user-attachments/assets/1eb07c67-9f4d-4d1b-ae91-7e88379e6135" />
+
 
 ## 🚨 IPS Alerts & Behavior
 
